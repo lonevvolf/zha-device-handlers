@@ -258,6 +258,7 @@ class AqaraManuSpecificCluster(XiaomiAqaraE1Cluster):
 
 (
     QuirkBuilder("Aqara", "lumi.switch.agl009")
+    .applies_to("lumi.switch.agl004")
     .adds_endpoint(1, device_type=zha.DeviceType.ON_OFF_SWITCH)
     .adds_endpoint(4, device_type=zha.DeviceType.ON_OFF_SWITCH)
     .adds_endpoint(21, device_type=zha.DeviceType.ON_OFF_SWITCH)
